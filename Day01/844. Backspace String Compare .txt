@@ -1,7 +1,6 @@
 Solution
 
 1) Using stack
-
 class Solution {
     public boolean backspaceCompare(String s, String t) {
 	Stack<Character> s1= new Stack<Character>;
@@ -35,7 +34,6 @@ else if(ch!=”#”){
 	return true;
     }
 }
-
 
 
 2) Using String
