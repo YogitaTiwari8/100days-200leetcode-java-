@@ -1,0 +1,29 @@
+Solution
+
+1.
+class Solution {
+    public boolean checkIfPangram(String sentence) {
+        boolean[] status=new boolean[26];
+        for(char ch:sentence.toCharArray()){
+            status[ch- 'a']=true;
+        }
+        for(boolean s:status){
+            if(!s){
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+2.
+class Solution {
+    public boolean checkIfPangram(String sentence) {
+        for(char ch='a';ch<='z';ch++){
+            if(sentence.indexOf(ch)==-1){
+                return false;
+            }
+        }
+        return true;
+    }
+}
