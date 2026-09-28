@@ -1,0 +1,16 @@
+Solution
+
+class Solution {
+    public int findLucky(int[] arr) {
+        int[] count=new int[501];
+        for(int x:arr){
+            count[x]++;
+        }
+        for(int i=500;i>0;i--){
+            if(count[i]==i){
+                return count[i];
+            }
+        }
+        return -1;
+    }
+}
